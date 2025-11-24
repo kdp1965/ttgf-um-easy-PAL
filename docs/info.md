@@ -40,7 +40,7 @@ Because I do not want to update the text below too often I write the configurati
 The numbers are:
 - 8 inputs
 - 18 intermediatory stages
-- 6 outputs
+- 7 outputs
 
 #### Pin assignment
 - The eight inputs are connected to the eight `uio_in` wires.

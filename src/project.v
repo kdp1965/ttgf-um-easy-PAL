@@ -20,7 +20,7 @@ module tt_um_MATTHIAS_M_PAL_TOP_WRAPPER (
   // PAL size parameters
   parameter NUM_INPUTS = 8;
   parameter NUM_INTERMEDIATE_STAGES = 18;
-  parameter NUM_OUTPUTS = 6;
+  parameter NUM_OUTPUTS = 7;
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
   // All output pins must be assigned. If not used, assign to 0. 
