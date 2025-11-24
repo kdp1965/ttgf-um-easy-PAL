@@ -19,7 +19,7 @@ module tt_um_MATTHIAS_M_PAL_TOP_WRAPPER (
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   // PAL size parameters
   parameter NUM_INPUTS = 8;
-  parameter NUM_INTERMEDIATE_STAGES = 18;
+  parameter NUM_INTERMEDIATE_STAGES = 36;
   parameter NUM_OUTPUTS = 7;
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
