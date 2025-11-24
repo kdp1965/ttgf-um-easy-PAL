@@ -12,6 +12,25 @@ You can also include images in this folder and reference them in the markdown. E
 This project is a PAL (programmable array logic device). It is programmed with a shift register.
 It was written by Matthias Musch and included in TTGF180 by me (Ken).
 
+easy_pal is a simple and naive PAL implementation that can be (re)programmed via a shift-register chain.
+The PAL is fully parametric and thus number of inputs (N), number of intermediate stages (P) and the number of outputs (M) can be configured in a flexible way in the verilog sources.
+
+![](example_n4_p4_o3_no_connections.png)
+
+## Example configuration
+To generate a bitstream the python script has to be run.
+In the top of the file the logic function and the size of the PAL-device has to be provided.
+After displaying the truth table the script generates the following output:
+
+![](example_python_output.png)
+
+The logic function was given in the following way in the Python code:
+"O0 = ~I0 | I1 & ~(I2 & I3) "
+
+Looking at the following waveform we can see that it does indeed work! :)
+
+![](example_waveform.png)
+
 ### Taped-out configuration and pin assignment
 Because I do not want to update the text below too often I write the configuration of the physical PAL device in terms of:
 - Number of inputs
@@ -20,15 +39,8 @@ Because I do not want to update the text below too often I write the configurati
 ...only once. In the following this will be refered to however the exact number is only mentioned here.
 The numbers are:
 - 8 inputs
-- 11 intermediatory stages
-- 4 outputs
-
-<!---<img src="/Images/example_n4_p4_o3_no_connections.png" alt="drawing" width="600"/>-->
-There was a really convenient picture that unfortunatly I cannot include in the generated documentation.
-However if you check out the github repo of this project you can study it. 
-It shows how the inputs, intermediate stages and output stages correlate to each other.
-Basically there is a matrix of inputs (N) and intermediate stages (P) with the size N*P.
-In the picture you can see numbers at the intersections of inputs/intermediate/output wires, which denote the indices of the shift register chain at this postion. The generated bitstream has a '1' at this positions if a connection is set and a '0' if no connection is set.
+- 19 intermediatory stages
+- 6 outputs
 
 #### Pin assignment
 - The eight inputs are connected to the eight `uio_in` wires.
