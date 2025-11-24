@@ -27,10 +27,10 @@ module tb ();
   tt_um_MATTHIAS_M_PAL_TOP_WRAPPER user_project (
 
       // Include power ports for the Gate Level test:
-`ifdef GL_TEST
-      .VPWR(VPWR),
-      .VGND(VGND),
-`endif
+//`ifdef GL_TEST
+//      .VPWR(VPWR),
+//      .VGND(VGND),
+//`endif
 
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
