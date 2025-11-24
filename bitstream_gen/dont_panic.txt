@@ -1,0 +1,18 @@
+
+T0  = ~I7 & ~I6 & ~I5 & ~I4 & ~I3 &  I2 & ~I1 & ~I0     # S=0  D
+T1  = ~I7 & ~I6 &  I5 & ~I4 &  I3 &  I2 &  I1 &  I0     # S=1  O
+T5  = ~I7 &  I6 & ~I5 & ~I4 &  I3 &  I2 &  I1 & ~I0     # S=2  N
+T6  = ~I7 &  I6 &  I5 &  I4 &  I3 &  I2 &  I1 &  I0     # S=3  ' (0x1F)
+T7  =  I7 & ~I6 & ~I5 &  I4 & ~I3 &  I2 & ~I1 & ~I0     # S=4  T
+T8  =  I7 & ~I6 &  I5 & ~I4 & ~I3 & ~I2 & ~I1 & ~I0     # S=5  SPACE
+T9  =  I7 &  I6 & ~I5 &  I4 & ~I3 & ~I2 & ~I1 & ~I0     # S=6  P
+T10 =  I7 &  I6 &  I5 & ~I4 & ~I3 & ~I2 & ~I1 &  I0     # S=7  A
+T2  = ~I7 & ~I6 & ~I5 & ~I4 &  I3 &  I2 &  I1 & ~I0     # S=0  N
+T3  = ~I7 & ~I6 &  I5 & ~I4 &  I3 & ~I2 & ~I1 &  I0     # S=1  I
+T4  = ~I7 &  I6 & ~I5 & ~I4 & ~I3 & ~I2 &  I1 &  I0     # S=2  C
+
+O0 = T0 | T2 | T5 | T4 | T7 | T9                               # S[0]
+O1 = T1 | T3 | T5 | T4 | T8 | T9                               # S[1]
+O2 = T6 | T7 | T8 | T9                                         # S[2]
+O3 = T0 | T2 | T1 | T3 | T5 | T4 | T6 | T7 | T8 | T9 | T10     # VALID
+O4 = T4                                                        # COMPLETE
