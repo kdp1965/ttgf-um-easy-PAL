@@ -39,7 +39,7 @@ Because I do not want to update the text below too often I write the configurati
 ...only once. In the following this will be refered to however the exact number is only mentioned here.
 The numbers are:
 - 8 inputs
-- 18 intermediatory stages
+- 30 intermediatory stages
 - 7 outputs
 
 #### Pin assignment
