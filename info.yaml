@@ -3,7 +3,7 @@ project:
   title:        "easy PAL"      # Project title
   author:       "Ken Pettit"      # Your name
   discord:      "busy_courgette_50064"
-  description:  "This is a simple PAL device (Matthias Musch) by with shift-register based (re)configuration" # One line description of what your project does
+  description:  "This is a simple PAL (by Matthias Musch) using shift-register based configuration"
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
